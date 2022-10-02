@@ -3,7 +3,7 @@
   import { sineInOut } from 'svelte/easing'
   import { fade } from 'svelte/transition'
   import { scale } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
+  import { sineOut } from 'svelte/easing';
   const define = () => {
     if (localStorage.yes == undefined) {
       localStorage.clear()
@@ -320,9 +320,9 @@
   let charId = undefined
   let charAtributo = undefined
   let atributoSecundario = undefined
-  let dadoCerto = 0
-  let sequencia = 0
-  let modificador = 0
+  let dadoCerto = undefined
+  let sequencia = undefined
+  let modificador = undefined
   const jogarDadoPrimario = (number, id, atributo) => {
     openSelection()
     dadoPrimario = number + 1
@@ -523,7 +523,7 @@
 
 <main>
   {#if dice}
-  <div class="customDice" transition:scale="{{duration: 150, delay: 0, opacity: 0.5, start: 0.5, easing: sineInOut}}">
+  <div class="customDice" transition:scale="{{duration: 100, delay: 0, opacity: 1, start: 0, easing: sineOut}}">
     <div class="wraper" >
       <input type="number" placeholder="0" bind:value={customDice} >
       <div class="dicebtn">
