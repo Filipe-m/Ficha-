@@ -675,14 +675,14 @@
                   ><img
                     class="image"
                     alt="Dano"
-                    src="https://img.icons8.com/color/344/drop-of-blood.png"
+                    src="https://cdn-icons-png.flaticon.com/512/8204/8204591.png"
                   /></button
                 >
                 <button class="button" on:click={() => cura(char.name, char.id)}
                   ><img
                     class="image"
                     alt="Cura"
-                    src="https://img.icons8.com/fluency/344/pill.png"
+                    src="https://cdn-icons-png.flaticon.com/512/7037/7037270.png"
                   /></button
                 >
                 <button
@@ -691,7 +691,7 @@
                   ><img
                     class="image"
                     alt="-Sanidade"
-                    src="https://img.icons8.com/ios/344/poison.png"
+                    src="https://cdn-icons-png.flaticon.com/512/8519/8519665.png"
                   /></button
                 >
                 <button
@@ -700,7 +700,7 @@
                   ><img
                     class="image"
                     alt="+Sanidade"
-                    src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/344/external-happy-emoji-dreamstale-lineal-dreamstale-2.png"
+                    src="https://cdn-icons-png.flaticon.com/512/7530/7530230.png"
                   /></button
                 >
               </div>
