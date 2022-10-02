@@ -527,12 +527,16 @@
     <div class="wraper" >
       <input type="number" placeholder="0" bind:value={customDice} >
       <div class="dicebtn">
+        <button class="dices" on:click={() => rollCustomDice(100)}>D100</button>
         <button class="dices" on:click={() => rollCustomDice(20)}>D20</button>
-        <button class="dices" on:click={() => rollCustomDice(12)}>D12</button>
       </div>
       <div class="dicebtn">
-        <button class="dices"on:click={() => rollCustomDice(8)}>D8</button>
-        <button class="dices" on:click={() => rollCustomDice(6)}>D6</button>
+        <button class="dices"on:click={() => rollCustomDice(12)}>D12</button>
+        <button class="dices" on:click={() => rollCustomDice(8)}>D8</button>
+      </div>
+      <div class="dicebtn">
+        <button class="dices"on:click={() => rollCustomDice(6)}>D6</button>
+        <button class="dices" on:click={() => rollCustomDice(4)}>D4</button>
       </div>
     </div>
   </div>
