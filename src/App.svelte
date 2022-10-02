@@ -525,11 +525,15 @@
   {#if dice}
   <div class="customDice" transition:scale="{{duration: 150, delay: 0, opacity: 0.5, start: 0.5, easing: sineInOut}}">
     <div class="wraper" >
-      <input type="number" bind:value={customDice} >
-      <button class="dices" on:click={() => rollCustomDice(20)}>D20</button>
-      <button class="dices" on:click={() => rollCustomDice(12)}>D12</button>
-      <button class="dices"on:click={() => rollCustomDice(8)}>D8</button>
-      <button class="dices" on:click={() => rollCustomDice(6)}>D6</button>
+      <input type="number" placeholder="0" bind:value={customDice} >
+      <div class="dicebtn">
+        <button class="dices" on:click={() => rollCustomDice(20)}>D20</button>
+        <button class="dices" on:click={() => rollCustomDice(12)}>D12</button>
+      </div>
+      <div class="dicebtn">
+        <button class="dices"on:click={() => rollCustomDice(8)}>D8</button>
+        <button class="dices" on:click={() => rollCustomDice(6)}>D6</button>
+      </div>
     </div>
   </div>
   {/if}
